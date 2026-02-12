@@ -1,0 +1,51 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  /* Base Mobile-First Styles (1 Column) */
+.travel-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  padding: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Tablet Styles (2 Columns) */
+@media (min-width: 600px) {
+  .travel-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop Styles (4 Columns) */
+@media (min-width: 1024px) {
+  .travel-gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="travel-gallery">
+  <!-- Items 1-4 -->
+  <div class="destination-card"><img src="./images/tagmaha.avif" alt="Agra"><div class="destination-card"><h3>Agra,India</h3><p>Masterpice of Mughal architecture</p></div></div>
+  <div class="destination-card"><img src="./images/gateof india.jpg" alt="mumbai"><div class="destination-card"><h3>Mumbai,india</h3>turist place in Maharashtra<p></p></div></div>
+  <div class="destination-card"><img src="./images/indiagat.jpg"alt="Delhi"><div class="destination-card"><h3>Delhi,India</h3><p>The heart of the city</p></div></div>
+  <div class="destination-card"><img src="./images/gurudwara.jpg" alt="Nanded"><div class="destination-card"><h3>Nanded,Inadia</h3><p>Golden temple</p></div></div>
+  <!-- Add 4 more for full 4x2 representation -->
+</div>
+</body>
+</html>
+
+
